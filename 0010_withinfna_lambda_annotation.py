@@ -9,7 +9,7 @@ import os
 import pandas as pd
 import numpy as np
 # Correct usage
-df = pd.read_excel("/Users/wuw5/Desktop/notes/20251023_nt_alignment_FNA/Lambda/000460_FNA_LAMBDA_Alignments_Permutations_with_MetaData_LeanFile_DELIVERY_9.xlsx")
+df = pd.read_excel("/~/20251023_nt_alignment_FNA/Lambda/000460_FNA_LAMBDA_Alignments_Permutations_with_MetaData_LeanFile_DELIVERY_9.xlsx")
 # Remove newline characters
 df.columns = df.columns.str.replace('\n', '_', regex=False)
 
@@ -186,7 +186,7 @@ combined_df_max = (
 #Number of unique 1st_sequence_id: 1115
 #Number of unique 1st_sequence_id of Bcell is 1039
 
-combined_df_max.to_csv("/Users/wuw5/Desktop/notes/20251103_FNA_PBMC/Lambda/1115Lambda_chain_combined_df_max.csv",index= False)
+combined_df_max.to_csv("/~/20251103_FNA_PBMC/Lambda/1115Lambda_chain_combined_df_max.csv",index= False)
 
 20251031_FNA_PBMC_version4
 
