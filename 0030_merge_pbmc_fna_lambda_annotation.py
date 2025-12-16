@@ -13,8 +13,8 @@ import glob
 
 ####=============
 ###read within_fna_annotated file
-within_fna_df = pd.read_csv(r"/Users/wuw5/Desktop/notes/20251103_FNA_PBMC/Lambda/1115Lambda_chain_combined_df_max.csv")
-fna_matched_pbmc_df = pd.read_csv("/Users/wuw5/Desktop/notes/20251103_FNA_PBMC/Lambda/44_lambda_chains_matched_to_PBMC_flags.csv")
+within_fna_df = pd.read_csv(r"/~/20251103_FNA_PBMC/Lambda/1115Lambda_chain_combined_df_max.csv")
+fna_matched_pbmc_df = pd.read_csv("/~/20251103_FNA_PBMC/Lambda/44_lambda_chains_matched_to_PBMC_flags.csv")
 fna_matched_pbmc_df["PBMC_Match"] = "MATCHED TO PBMC"
 
 ## merge the pbmc flags to fna dataset
@@ -65,5 +65,5 @@ within_fna_df["Keep/Discard_multi_within_well"] = np.where(
 )
 
 
-within_fna_df.to_csv("//Users/wuw5/Desktop/notes/20251103_FNA_PBMC/Lambda/0030_1115_lambda_chains_with_fna_pbmc_flags.csv", index=False)
+within_fna_df.to_csv("/~/20251103_FNA_PBMC/Lambda/0030_1115_lambda_chains_with_fna_pbmc_flags.csv", index=False)
 
