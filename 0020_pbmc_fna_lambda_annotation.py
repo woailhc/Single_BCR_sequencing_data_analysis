@@ -64,7 +64,7 @@ filtered_df = df[
 ]
 filtered_df['first_sequence_id'].nunique()
 #Out[42]: 44
-filtered_df.to_csv("/Users/wuw5/Desktop/notes/20251103_FNA_PBMC/Lambda/44_lambda_chains_matched_to_PBMC_flags.csv", index=False)
+filtered_df.to_csv("/~/20251103_FNA_PBMC/Lambda/44_lambda_chains_matched_to_PBMC_flags.csv", index=False)
 
 
 
