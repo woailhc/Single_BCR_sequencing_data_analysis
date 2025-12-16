@@ -43,7 +43,7 @@ combined_df = pd.concat([df, df_swapped], axis=0, ignore_index=True)
 
 
 # Read non_compared chains with unique cdr3 length unique into a DataFrame
-non_compared_df = pd.read_excel("/Users/wuw5/Desktop/notes/20251031_FNA_PBMC_version4/FNA_vs_FNA__UniqCDR3LenSingletons.xlsx")
+non_compared_df = pd.read_excel("/~/20251031_FNA_PBMC_version4/FNA_vs_FNA__UniqCDR3LenSingletons.xlsx")
 non_compared_df.columns = non_compared_df.columns.str.replace('\n', '_', regex=False)
 non_compared_df.columns = non_compared_df.columns.str.lower()
 non_compared_df.columns = ['1st_' + col for col in non_compared_df.columns]
@@ -89,7 +89,7 @@ combined_df = concated_df.copy()
 # Check the first few rows
 print(non_compared_df.head())
 
-os.chdir(r"/Users/wuw5/Desktop/notes/20251029_FNA_PBMC/")
+os.chdir(r"/~/20251029_FNA_PBMC/")
 from module001_bt_cell_match import add_bt_cell_match
 combined_df_original = combined_df.copy()
 combined_df = add_bt_cell_match(
