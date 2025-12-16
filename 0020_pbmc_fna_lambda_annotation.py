@@ -32,7 +32,7 @@ df["second_real_subjectid"] = df["second_real_subjectid"].astype("Int64")
 
 
 os.chdir(r"/~/20251028_FNA_PBMC/")
-from classify_sequences_labmda_99 import classify_all_sequences
+from module002_classify_sequences_labmda_99 import classify_all_sequences
 
 # Apply to your DataFrame
 df = classify_all_sequences(
