@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import glob
 # Define folder path
-folder_path = "/Users/wuw5/Desktop/notes/20251028_FNA_PBMC/Lambda/LeanFiles_Per_Donor"
+folder_path = "/~/20251028_FNA_PBMC/Lambda/LeanFiles_Per_Donor"
 
 # Find all CSV files in the folder
 csv_files = glob.glob(os.path.join(folder_path, "*.csv"))
