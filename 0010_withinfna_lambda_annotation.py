@@ -110,8 +110,8 @@ Name: count, dtype: int64
 
 # 2. add a "cross_cell_type", for combined_df['1st_cell_type'] == "Bcell", any of the mask_100 = group_to_update[identity_col] == 100 rows '2nd_cell_type' = 'Bcell', put "yes"
 
-import module002_removed_well_duplicate_compare_with_Bcell
-from module002_removed_well_duplicate_compare_with_Bcell import classify_all_sequences
+import module001_removed_well_duplicate_compare_with_Bcell
+from module001_removed_well_duplicate_compare_with_Bcell import classify_all_sequences
 
 # Apply your function only to the Bcell subset
 
@@ -144,7 +144,7 @@ Remaining rows: 769445
 Processed subset rows: 665753
 ────────────────────────────────────
 
-from module003_add_multi_unique_in_one_well import add_multi_unique_in_one_well
+from module001_add_multi_unique_in_one_well import add_multi_unique_in_one_well
 
 
 combined_df = add_multi_unique_in_one_well(combined_df)
